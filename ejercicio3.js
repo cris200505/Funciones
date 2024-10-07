@@ -28,7 +28,7 @@ function multiplicar(a, b){
 
 // 2.2 Escribe una función llamada `saludarPersonalizado` que reciba dos parámetros: `nombre` y `apellido`. La función debe devolver "Hola, [nombre] [apellido]".
 function saludarPersonalizado(nombre, apellido){
-    console.log("Hola "+nombre+" "+apellido)
+    return ("Hola "+nombre+" "+apellido)
 }
 
 // 2.3 Crea una función llamada `calcularPotencia` que reciba dos parámetros: base y exponente. La función debe devolver el resultado de elevar la base al exponente.
@@ -55,7 +55,7 @@ const multiplicar = function (a, b){
 
 // 3.2 Escribe una **function expression** llamada `saludar` que acepte un parámetro `nombre` y devuelva "Hola, [nombre]".
 const saludar = function(nombre){
-console.log("Hola "+nombre)
+    return ("Hola "+nombre)
 }
 
 // 3.3 Crea una **function expression** llamada `esPar` que acepte un número como parámetro y devuelva `true` si el número es par, o `false` en caso contrario.
@@ -78,22 +78,22 @@ const multiplicarFlecha = (a, b) =>{
 
 // 4.2 Crea una función flecha llamada `saludarFlecha` que reciba un parámetro `nombre` y devuelva "Hola [nombre]".
 const saludarFlecha = nombre =>{
-    console.log("Hola "+nombre)
+    return("Hola "+nombre)
 }
 
 // 4.3 Escribe una función flecha llamada `calcularArea` que reciba el radio de un círculo y devuelva el área del círculo. Usa la fórmula A = π * r².
 const calcularArea = radio => {
-return Math.PI * Math.pow(radio, 2)
+    return Math.PI * Math.pow(radio, 2)
 };
 
 // 5. Recursividad
 // 5.1 Escribe una función que calcule la suma de los primeros n números enteros de forma recursiva. Por ejemplo: `suma(3) -> 1 + 2 + 3 = 6`
 function suma(n) {
-if (n <= 1){
-    return n;
-}else{
-    return n + suma(n-1)
-}
+    if (n <= 1){
+        return n;
+    }else{
+        return n + suma(n-1)
+    }
 }
 
 // 5.2 Escribe una función que calcule la sucesión de Fibonacci de forma recursiva. La sucesión de Fibonacci es una serie de números que empieza por 0 y 1 y cada número es la suma de los dos anteriores. Por ejemplo: `fibonacci(6) -> 8`
